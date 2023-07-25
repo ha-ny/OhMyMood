@@ -13,6 +13,9 @@
 		3F9A1ABD2A7065B6002B28E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9A1ABB2A7065B6002B28E1 /* Main.storyboard */; };
 		3F9A1ABF2A7065B7002B28E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9A1ABE2A7065B7002B28E1 /* Assets.xcassets */; };
 		3F9A1AC22A7065B7002B28E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9A1AC02A7065B7002B28E1 /* LaunchScreen.storyboard */; };
+		3F9A1ACA2A7065D5002B28E1 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A1AC92A7065D5002B28E1 /* AddViewController.swift */; };
+		3F9A1ACC2A707292002B28E1 /* EmotionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A1ACB2A707292002B28E1 /* EmotionStore.swift */; };
+		3F9A1ACE2A707E8A002B28E1 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A1ACD2A707E8A002B28E1 /* ChartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		3F9A1ABE2A7065B7002B28E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F9A1AC12A7065B7002B28E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F9A1AC32A7065B7002B28E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F9A1AC92A7065D5002B28E1 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = SOURCE_ROOT; };
+		3F9A1ACB2A707292002B28E1 /* EmotionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionStore.swift; sourceTree = "<group>"; };
+		3F9A1ACD2A707E8A002B28E1 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +62,13 @@
 		3F9A1AB42A7065B6002B28E1 /* OhMyMood */ = {
 			isa = PBXGroup;
 			children = (
+				3F9A1ABB2A7065B6002B28E1 /* Main.storyboard */,
+				3F9A1AC92A7065D5002B28E1 /* AddViewController.swift */,
+				3F9A1ACD2A707E8A002B28E1 /* ChartViewController.swift */,
+				3F9A1ACB2A707292002B28E1 /* EmotionStore.swift */,
 				3F9A1AB52A7065B6002B28E1 /* AppDelegate.swift */,
 				3F9A1AB72A7065B6002B28E1 /* SceneDelegate.swift */,
 				3F9A1AB92A7065B6002B28E1 /* ViewController.swift */,
-				3F9A1ABB2A7065B6002B28E1 /* Main.storyboard */,
 				3F9A1ABE2A7065B7002B28E1 /* Assets.xcassets */,
 				3F9A1AC02A7065B7002B28E1 /* LaunchScreen.storyboard */,
 				3F9A1AC32A7065B7002B28E1 /* Info.plist */,
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9A1ACC2A707292002B28E1 /* EmotionStore.swift in Sources */,
 				3F9A1ABA2A7065B6002B28E1 /* ViewController.swift in Sources */,
 				3F9A1AB62A7065B6002B28E1 /* AppDelegate.swift in Sources */,
 				3F9A1AB82A7065B6002B28E1 /* SceneDelegate.swift in Sources */,
+				3F9A1ACA2A7065D5002B28E1 /* AddViewController.swift in Sources */,
+				3F9A1ACE2A707E8A002B28E1 /* ChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,9 +314,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hany.OhMyMood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +345,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hany.OhMyMood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
