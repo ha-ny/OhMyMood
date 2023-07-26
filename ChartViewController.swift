@@ -21,6 +21,7 @@ class ChartViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         print(#function)
+        super.viewWillAppear(animated)
         emotionCountSetting()
     }
     
@@ -32,7 +33,7 @@ class ChartViewController: UIViewController {
     
     func emotionCountSetting(){
         for emotionCount in emotionCounts{
-            emotionCount.text = String(emotionDic[Emotion(rawValue: emotionCount.tag)!] ?? 0)
+            emotionCount.text = String(UserDefaults.standard.integer(forKey: "\(Emotion(rawValue: emotionCount.tag)!)"))
         }
     }
 }

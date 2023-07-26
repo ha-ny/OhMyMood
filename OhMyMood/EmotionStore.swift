@@ -8,17 +8,9 @@
 import Foundation
 
 enum Emotion: Int{
-    case happy = 0
+    case happy
     case good
     case soso
     case sad
     case bad
 }
-
-var emotionDic: [Emotion:Int] = [
-    .happy: 0,
-    .good: 0,
-    .soso: 0,
-    .sad: 0,
-    .bad: 0,
-]

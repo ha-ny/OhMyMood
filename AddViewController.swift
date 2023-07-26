@@ -9,13 +9,14 @@ import UIKit
 
 class AddViewController: UIViewController {
     
+    var count = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func emotionButtonClick(_ sender: UIButton) {
-        let key = Emotion(rawValue: sender.tag)!
-        emotionDic.updateValue(emotionDic[key]! + 1 , forKey: key)
-        print(emotionDic[key]!)
+        count = UserDefaults.standard.integer(forKey: "\(Emotion(rawValue: sender.tag)!)")
+        UserDefaults.standard.set(count + 1, forKey: "\(Emotion(rawValue: sender.tag)!)")
     }
 }
