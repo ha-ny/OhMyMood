@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0EED672A97420E008B508A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3F0EED662A97420E008B508A /* SnapKit */; };
 		3F9A1AB62A7065B6002B28E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A1AB52A7065B6002B28E1 /* AppDelegate.swift */; };
 		3F9A1AB82A7065B6002B28E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A1AB72A7065B6002B28E1 /* SceneDelegate.swift */; };
-		3F9A1ABA2A7065B6002B28E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A1AB92A7065B6002B28E1 /* ViewController.swift */; };
-		3F9A1ABD2A7065B6002B28E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9A1ABB2A7065B6002B28E1 /* Main.storyboard */; };
+		3F9A1ABA2A7065B6002B28E1 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A1AB92A7065B6002B28E1 /* TabBarViewController.swift */; };
 		3F9A1ABF2A7065B7002B28E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9A1ABE2A7065B7002B28E1 /* Assets.xcassets */; };
 		3F9A1AC22A7065B7002B28E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9A1AC02A7065B7002B28E1 /* LaunchScreen.storyboard */; };
 		3F9A1ACA2A7065D5002B28E1 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A1AC92A7065D5002B28E1 /* AddViewController.swift */; };
@@ -22,8 +22,7 @@
 		3F9A1AB22A7065B6002B28E1 /* OhMyMood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OhMyMood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9A1AB52A7065B6002B28E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F9A1AB72A7065B6002B28E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3F9A1AB92A7065B6002B28E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3F9A1ABC2A7065B6002B28E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F9A1AB92A7065B6002B28E1 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		3F9A1ABE2A7065B7002B28E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F9A1AC12A7065B7002B28E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F9A1AC32A7065B7002B28E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0EED672A97420E008B508A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,13 +62,12 @@
 		3F9A1AB42A7065B6002B28E1 /* OhMyMood */ = {
 			isa = PBXGroup;
 			children = (
-				3F9A1ABB2A7065B6002B28E1 /* Main.storyboard */,
+				3F9A1AB92A7065B6002B28E1 /* TabBarViewController.swift */,
 				3F9A1AC92A7065D5002B28E1 /* AddViewController.swift */,
 				3F9A1ACD2A707E8A002B28E1 /* ChartViewController.swift */,
 				3F9A1ACB2A707292002B28E1 /* EmotionStore.swift */,
-				3F9A1AB52A7065B6002B28E1 /* AppDelegate.swift */,
 				3F9A1AB72A7065B6002B28E1 /* SceneDelegate.swift */,
-				3F9A1AB92A7065B6002B28E1 /* ViewController.swift */,
+				3F9A1AB52A7065B6002B28E1 /* AppDelegate.swift */,
 				3F9A1ABE2A7065B7002B28E1 /* Assets.xcassets */,
 				3F9A1AC02A7065B7002B28E1 /* LaunchScreen.storyboard */,
 				3F9A1AC32A7065B7002B28E1 /* Info.plist */,
@@ -92,6 +91,9 @@
 			dependencies = (
 			);
 			name = OhMyMood;
+			packageProductDependencies = (
+				3F0EED662A97420E008B508A /* SnapKit */,
+			);
 			productName = OhMyMood;
 			productReference = 3F9A1AB22A7065B6002B28E1 /* OhMyMood.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 3F9A1AA92A7065B6002B28E1;
+			packageReferences = (
+				3F0EED652A97420E008B508A /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 3F9A1AB32A7065B6002B28E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -136,7 +141,6 @@
 			files = (
 				3F9A1AC22A7065B7002B28E1 /* LaunchScreen.storyboard in Resources */,
 				3F9A1ABF2A7065B7002B28E1 /* Assets.xcassets in Resources */,
-				3F9A1ABD2A7065B6002B28E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F9A1ACC2A707292002B28E1 /* EmotionStore.swift in Sources */,
-				3F9A1ABA2A7065B6002B28E1 /* ViewController.swift in Sources */,
+				3F9A1ABA2A7065B6002B28E1 /* TabBarViewController.swift in Sources */,
 				3F9A1AB62A7065B6002B28E1 /* AppDelegate.swift in Sources */,
 				3F9A1AB82A7065B6002B28E1 /* SceneDelegate.swift in Sources */,
 				3F9A1ACA2A7065D5002B28E1 /* AddViewController.swift in Sources */,
@@ -159,14 +163,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3F9A1ABB2A7065B6002B28E1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F9A1ABC2A7065B6002B28E1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3F9A1AC02A7065B7002B28E1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -304,9 +300,9 @@
 				INFOPLIST_FILE = OhMyMood/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +331,9 @@
 				INFOPLIST_FILE = OhMyMood/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F0EED652A97420E008B508A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F0EED662A97420E008B508A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F0EED652A97420E008B508A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F9A1AAA2A7065B6002B28E1 /* Project object */;
 }
